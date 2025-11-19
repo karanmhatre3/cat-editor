@@ -1,0 +1,49 @@
+/**
+ * CAT Editor Design System - Colors
+ * Extracted from Figma design tokens
+ */
+
+:root {
+  /* Primary Colors */
+  --color-background-primary: #171923;
+  --color-background-secondary: #212330;
+  --color-background-tertiary: #121521;
+
+  /* Gray Scale */
+  --color-gray-900: #121521;
+  --color-gray-800: #212330;
+  --color-gray-700: #4d5059;
+  --color-gray-600: #6e747e;
+  --color-gray-500: #73757c;
+  --color-white: #ffffff;
+
+  /* Purple (Brand/Interactive) */
+  --color-purple-200: #c2bfec;
+  --color-purple-300: #9e9de6;
+  --color-purple-400: #535adc;
+
+  /* Status Colors */
+  --color-green-600: #099e7c;
+  --color-yellow-500: #ffbb14;
+  --color-yellow-700: #b07d00;
+  --color-orange-600: #c84f09;
+  --color-orange-700: #983c06;
+  --color-red-400: #e45959;
+  --color-red-500: #d12626;
+  --color-red-600: #c32424;
+
+  /* Text Colors */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #6e747e;
+  --color-text-tertiary: #73757c;
+  --color-text-default: #121521;
+
+  /* Border Colors */
+  --color-border-default: #4d5059;
+  --color-border-card: #dfe1e6;
+
+  /* Icon Colors */
+  --color-icon-default: #121521;
+  --color-icon-faded: #6e747e;
+  --color-icon-error: #9a2323;
+}

@@ -1,0 +1,490 @@
+[
+  {
+    "id": 1,
+    "source": "The [k]colour[/k] of the organisation's logo was [b]recognised[/b] as brilliant across all [term]centres[/term].",
+    "target": "The [k]color[/k] of the organization's logo was [b]recognized[/b] as brilliant across all [term]centers[/term].",
+    "suggestedText": "The [k]color[/k] of the organization's logo was [b]recognized[/b] as brilliant across all [term]centers[/term].",
+    "status": "editing",
+    "hasWarning": false,
+    "aiSuggestion": {
+      "text": "The [k]color[/k] of the organization's logo was [b]recognized[/b] as brilliant across all [term]centers[/term].",
+      "confidence": 96
+    },
+    "tmMatches": [
+      {
+        "id": "tm-1-1",
+        "source": "colour",
+        "target": "color",
+        "matchPercentage": 100,
+        "type": "TB"
+      },
+      {
+        "id": "tm-1-2",
+        "source": "organisation's logo",
+        "target": "organization's logo",
+        "matchPercentage": 89,
+        "type": "TM"
+      },
+      {
+        "id": "tm-1-3",
+        "source": "recognised as brilliant",
+        "target": "recognized as brilliant",
+        "matchPercentage": 76,
+        "type": "TM"
+      },
+      {
+        "id": "tm-1-4",
+        "source": "across all centres",
+        "target": "across all centers",
+        "matchPercentage": 45,
+        "type": "TM"
+      }
+    ],
+    "issues": [
+      {
+        "id": "issue-1-1",
+        "type": "warning",
+        "category": "reviewer",
+        "message": "The word \"brilliant\" may be too informal for technical documentation - consider using \"outstanding\" or \"excellent\" instead",
+        "severity": "low",
+        "badges": ["Minor", "Linguistic Convention"]
+      },
+      {
+        "id": "issue-1-2",
+        "type": "warning",
+        "category": "ai-qa",
+        "message": "Consider using 'center' consistently throughout the document",
+        "severity": "low",
+        "quotedText": "\"centres\" → \"centers\""
+      }
+    ],
+    "comments": [
+      {
+        "id": "comment-1-1",
+        "author": "Sarah Chen",
+        "avatar": "SC",
+        "message": "Should we use 'recognized' here or keep 'acknowledged'? The client prefers British English.",
+        "timestamp": "2024-01-15T10:30:00"
+      },
+      {
+        "id": "comment-1-2",
+        "author": "Mike Johnson",
+        "avatar": "MJ",
+        "message": "I checked with the client - they want US English for this project. 'Recognized' is correct.",
+        "timestamp": "2024-01-15T11:45:00"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "source": "We [k]travelled[/k] through the neighbourhood whilst [b]analysing[/b] the [term]labour[/term] statistics.",
+    "target": "We [k]traveled[/k] through the neighborhood whilst [b]analyzing[/b] the [term]labor[/term] statistics.",
+    "suggestedText": "We [k]traveled[/k] through the neighborhood whilst [b]analyzing[/b] the [term]labor[/term] statistics.",
+    "status": "draft",
+    "hasWarning": false,
+    "aiSuggestion": {
+      "text": "We [k]traveled[/k] through the neighborhood while [b]analyzing[/b] the [term]labor[/term] statistics.",
+      "confidence": 92
+    },
+    "tmMatches": [
+      {
+        "id": "tm-2-1",
+        "source": "travelled",
+        "target": "traveled",
+        "matchPercentage": 100,
+        "type": "TB"
+      },
+      {
+        "id": "tm-2-2",
+        "source": "neighbourhood",
+        "target": "neighborhood",
+        "matchPercentage": 85,
+        "type": "TM"
+      },
+      {
+        "id": "tm-2-3",
+        "source": "analysing",
+        "target": "analyzing",
+        "matchPercentage": 72,
+        "type": "TM"
+      },
+      {
+        "id": "tm-2-4",
+        "source": "labour statistics",
+        "target": "labor statistics",
+        "matchPercentage": 58,
+        "type": "TM"
+      }
+    ],
+    "issues": [
+      {
+        "id": "issue-2-1",
+        "type": "warning",
+        "category": "reviewer",
+        "message": "Use \"while\" instead of \"whilst\" for American English style",
+        "severity": "medium",
+        "badges": ["Major", "Linguistic Convention"]
+      },
+      {
+        "id": "issue-2-2",
+        "type": "error",
+        "category": "reviewer",
+        "message": "The spelling \"neighborhood\" is inconsistent with the British English source \"neighbourhood\"",
+        "severity": "high",
+        "badges": ["Major", "Grammar"]
+      },
+      {
+        "id": "issue-2-3",
+        "type": "warning",
+        "category": "ai-qa",
+        "message": "Inconsistent use of 'whilst' - AI suggestion uses 'while'",
+        "severity": "high",
+        "quotedText": "\"whilst\" → \"while\""
+      }
+    ],
+    "comments": [
+      {
+        "id": "comment-2-1",
+        "author": "Emma Davis",
+        "avatar": "ED",
+        "message": "The term 'whilst' needs to be changed to 'while' per the style guide.",
+        "timestamp": "2024-01-15T09:20:00"
+      },
+      {
+        "id": "comment-2-2",
+        "author": "Alex Turner",
+        "avatar": "AT",
+        "message": "Good catch! I'll update this now.",
+        "timestamp": "2024-01-15T09:35:00"
+      },
+      {
+        "id": "comment-2-3",
+        "author": "Sarah Chen",
+        "avatar": "SC",
+        "message": "Also double-check 'labor' vs 'labour' for consistency.",
+        "timestamp": "2024-01-15T10:15:00"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "source": "The [k]councillor[/k] [b]realised[/b] that the [term]defence[/term] programme required authorisation.",
+    "target": "The [k]councilor[/k] [b]realized[/b] that the [term]defense[/term] program required authorization.",
+    "suggestedText": "The [k]councilor[/k] [b]realized[/b] that the [term]defense[/term] program required authorization.",
+    "status": "draft",
+    "hasWarning": false,
+    "aiSuggestion": {
+      "text": "The [k]councilor[/k] [b]realized[/b] that the [term]defense[/term] program required authorization.",
+      "confidence": 94
+    },
+    "tmMatches": [
+      {
+        "id": "tm-3-1",
+        "source": "councillor",
+        "target": "councilor",
+        "matchPercentage": 100,
+        "type": "TB"
+      },
+      {
+        "id": "tm-3-2",
+        "source": "realised",
+        "target": "realized",
+        "matchPercentage": 88,
+        "type": "TM"
+      },
+      {
+        "id": "tm-3-3",
+        "source": "defence programme",
+        "target": "defense program",
+        "matchPercentage": 65,
+        "type": "TM"
+      },
+      {
+        "id": "tm-3-4",
+        "source": "required authorisation",
+        "target": "required authorization",
+        "matchPercentage": 42,
+        "type": "TM"
+      }
+    ],
+    "issues": [
+      {
+        "id": "issue-3-1",
+        "type": "warning",
+        "category": "reviewer",
+        "message": "Verify the spelling \"councilor\" - some US dictionaries prefer \"councillor\" for this context",
+        "severity": "medium",
+        "badges": ["Minor", "Spelling"]
+      },
+      {
+        "id": "issue-3-2",
+        "type": "warning",
+        "category": "ai-qa",
+        "message": "Multiple spelling variations in this segment",
+        "severity": "low",
+        "quotedText": "\"councillor\" → \"councilor\""
+      }
+    ],
+    "comments": [
+      {
+        "id": "comment-3-1",
+        "author": "Mike Johnson",
+        "avatar": "MJ",
+        "message": "Is 'councilor' the correct spelling for US English?",
+        "timestamp": "2024-01-14T16:40:00"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "source": "Please [k]prioritise[/k] the [b]honour[/b] of the [term]organisation[/term] in your behaviour.",
+    "target": "Please [k]prioritize[/k] the [b]honor[/b] of the [term]organization[/term] in your behavior.",
+    "suggestedText": "Please [k]prioritize[/k] the [b]honor[/b] of the [term]organization[/term] in your behavior.",
+    "status": "draft",
+    "hasWarning": true,
+    "aiSuggestion": {
+      "text": "Please [k]prioritize[/k] the [b]honor[/b] of the [term]organization[/term] in your behavior.",
+      "confidence": 91
+    },
+    "tmMatches": [
+      {
+        "id": "tm-4-1",
+        "source": "prioritise",
+        "target": "prioritize",
+        "matchPercentage": 100,
+        "type": "TB"
+      },
+      {
+        "id": "tm-4-2",
+        "source": "honour",
+        "target": "honor",
+        "matchPercentage": 82,
+        "type": "TM"
+      },
+      {
+        "id": "tm-4-3",
+        "source": "organisation in your behaviour",
+        "target": "organization in your behavior",
+        "matchPercentage": 68,
+        "type": "TM"
+      }
+    ],
+    "issues": [
+      {
+        "id": "issue-4-1",
+        "type": "warning",
+        "category": "reviewer",
+        "message": "The phrase \"honor of the organization\" sounds awkward - consider rewording to \"organization's reputation\" or \"uphold the organization\"",
+        "severity": "medium",
+        "badges": ["Minor", "Style"]
+      },
+      {
+        "id": "issue-4-2",
+        "type": "error",
+        "category": "reviewer",
+        "message": "Inconsistent terminology: \"behavior\" in target vs \"behaviour\" in source",
+        "severity": "high",
+        "badges": ["Major", "Consistency"]
+      },
+      {
+        "id": "issue-4-3",
+        "type": "error",
+        "category": "ai-qa",
+        "message": "The phrase 'honor of the organization' may sound awkward",
+        "severity": "high",
+        "quotedText": "\"honor of the organization\" → \"organization's reputation\""
+      }
+    ],
+    "comments": [
+      {
+        "id": "comment-4-1",
+        "author": "Emma Davis",
+        "avatar": "ED",
+        "message": "This sentence feels awkward. Can we rephrase it?",
+        "timestamp": "2024-01-15T08:10:00"
+      },
+      {
+        "id": "comment-4-2",
+        "author": "Alex Turner",
+        "avatar": "AT",
+        "message": "How about 'Please prioritize the organization's reputation in your behavior'?",
+        "timestamp": "2024-01-15T08:25:00"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "source": "The [k]grey[/k] [term]catalogue[/term] was [b]marvellous[/b] for organising our favourite colours.",
+    "target": "The [k]gray[/k] [term]catalog[/term] was [b]marvelous[/b] for organizing our favorite colors.",
+    "suggestedText": "The [k]gray[/k] [term]catalog[/term] was [b]marvelous[/b] for organizing our favorite colors.",
+    "status": "translated",
+    "hasWarning": false,
+    "aiSuggestion": {
+      "text": "The [k]gray[/k] [term]catalog[/term] was [b]marvelous[/b] for organizing our favorite colors.",
+      "confidence": 98
+    },
+    "tmMatches": [
+      {
+        "id": "tm-5-1",
+        "source": "grey",
+        "target": "gray",
+        "matchPercentage": 100,
+        "type": "TB"
+      },
+      {
+        "id": "tm-5-2",
+        "source": "catalogue",
+        "target": "catalog",
+        "matchPercentage": 95,
+        "type": "TM"
+      },
+      {
+        "id": "tm-5-3",
+        "source": "marvellous",
+        "target": "marvelous",
+        "matchPercentage": 78,
+        "type": "TM"
+      },
+      {
+        "id": "tm-5-4",
+        "source": "favourite colours",
+        "target": "favorite colors",
+        "matchPercentage": 51,
+        "type": "TM"
+      }
+    ],
+    "issues": [
+      {
+        "id": "issue-5-1",
+        "type": "warning",
+        "category": "reviewer",
+        "message": "The word \"marvelous\" is too informal for technical documentation - use \"excellent\" or \"effective\" instead",
+        "severity": "medium",
+        "badges": ["Minor", "Register"]
+      },
+      {
+        "id": "issue-5-2",
+        "type": "warning",
+        "category": "ai-qa",
+        "message": "Verify 'gray' spelling is consistent with style guide",
+        "severity": "low",
+        "quotedText": "\"grey\" → \"gray\""
+      }
+    ],
+    "comments": [
+      {
+        "id": "comment-5-1",
+        "author": "Sarah Chen",
+        "avatar": "SC",
+        "message": "Great work on this translation!",
+        "timestamp": "2024-01-15T14:20:00"
+      },
+      {
+        "id": "comment-5-2",
+        "author": "Mike Johnson",
+        "avatar": "MJ",
+        "message": "Agreed, looks perfect.",
+        "timestamp": "2024-01-15T14:45:00"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "source": "The [k]programme's[/k] [term]licence[/term] was [b]cancelled[/b] after analysing the organisation's behaviour.",
+    "target": "The [k]program's[/k] [term]license[/term] was [b]canceled[/b] after analyzing the organization's behavior.",
+    "suggestedText": "The [k]program's[/k] [term]license[/term] was [b]canceled[/b] after analyzing the organization's behavior.",
+    "status": "draft",
+    "hasWarning": true,
+    "aiSuggestion": {
+      "text": "The [k]program's[/k] [term]license[/term] was [b]canceled[/b] after analyzing the organization's behavior.",
+      "confidence": 89
+    },
+    "tmMatches": [
+      {
+        "id": "tm-6-1",
+        "source": "programme's",
+        "target": "program's",
+        "matchPercentage": 100,
+        "type": "TB"
+      },
+      {
+        "id": "tm-6-2",
+        "source": "licence",
+        "target": "license",
+        "matchPercentage": 87,
+        "type": "TM"
+      },
+      {
+        "id": "tm-6-3",
+        "source": "cancelled",
+        "target": "canceled",
+        "matchPercentage": 73,
+        "type": "TM"
+      },
+      {
+        "id": "tm-6-4",
+        "source": "organisation's behaviour",
+        "target": "organization's behavior",
+        "matchPercentage": 39,
+        "type": "TM"
+      }
+    ],
+    "issues": [
+      {
+        "id": "issue-6-1",
+        "type": "warning",
+        "category": "reviewer",
+        "message": "Both \"canceled\" and \"cancelled\" are valid spellings - ensure consistency across the document",
+        "severity": "low",
+        "badges": ["Minor", "Spelling"]
+      },
+      {
+        "id": "issue-6-2",
+        "type": "error",
+        "category": "reviewer",
+        "message": "Passive voice construction \"program's license was canceled\" - consider using active voice for clarity",
+        "severity": "high",
+        "badges": ["Major", "Grammar"]
+      },
+      {
+        "id": "issue-6-3",
+        "type": "warning",
+        "category": "ai-qa",
+        "message": "Multiple spelling variations detected",
+        "severity": "medium",
+        "quotedText": "\"cancelled\" → \"canceled\""
+      },
+      {
+        "id": "issue-6-4",
+        "type": "warning",
+        "category": "ai-qa",
+        "message": "Check terminology consistency across document",
+        "severity": "low",
+        "quotedText": "\"programme's\" → \"program's\""
+      }
+    ],
+    "comments": [
+      {
+        "id": "comment-6-1",
+        "author": "Alex Turner",
+        "avatar": "AT",
+        "message": "This needs to be rewritten in active voice.",
+        "timestamp": "2024-01-15T11:00:00"
+      },
+      {
+        "id": "comment-6-2",
+        "author": "Emma Davis",
+        "avatar": "ED",
+        "message": "I'll work on this one. Should be: 'The organization canceled the program's license after analyzing behavior.'",
+        "timestamp": "2024-01-15T11:20:00"
+      },
+      {
+        "id": "comment-6-3",
+        "author": "Sarah Chen",
+        "avatar": "SC",
+        "message": "Perfect! That reads much better.",
+        "timestamp": "2024-01-15T12:00:00"
+      }
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+.bottom-bar {
+  background-color: #212330;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-s);
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.bottom-bar__left {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-l);
+  flex-shrink: 0;
+}
+
+.bottom-bar__document {
+  background: transparent;
+  border: none;
+  padding: var(--spacing-xs) var(--spacing-s);
+  border-radius: 40px;
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-s);
+  font-weight: var(--font-weight-medium);
+  color: #6e747e;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.bottom-bar__document:hover {
+  color: var(--color-white);
+}
+
+.bottom-bar__document--active {
+  background-color: #121521;
+  color: #9e9de6;
+}
+
+.bottom-bar__right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-s);
+  flex-shrink: 0;
+}
+
+.bottom-bar__status-badge {
+  background-color: #4d5059;
+  padding: var(--spacing-xxs) var(--spacing-s);
+  border-radius: var(--radius-l);
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-m);
+  font-weight: normal;
+  letter-spacing: 0.6px;
+  color: var(--color-white);
+}
+
+.bottom-bar__progress {
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-s);
+  color: #6e747e;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.bottom-bar__progress-numbers {
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-bold);
+  color: #6e747e;
+}
+
+.bottom-bar__progress-label {
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-medium);
+  color: #6e747e;
+}

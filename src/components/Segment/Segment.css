@@ -1,0 +1,252 @@
+.segment {
+  display: flex;
+  background-color: var(--color-background-secondary);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.segment--active {
+  background-color: #101116;
+  border: 1px solid var(--color-border-default);
+  cursor: default;
+}
+
+/* Content area */
+.segment__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Split view - source and target side by side */
+.segment--split .segment__content {
+  flex-direction: row;
+}
+
+.segment--split .segment__source {
+  flex: 1;
+  border-bottom: none;
+  border-right: 1px solid var(--color-border-default);
+}
+
+.segment--split .segment__target {
+  flex: 1;
+}
+
+/* Source section */
+.segment__source {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-m);
+  padding: var(--spacing-m);
+  border-bottom: 1px solid var(--color-border-default);
+}
+
+.segment__source-text {
+  flex: 1;
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-s);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
+  word-wrap: break-word;
+}
+
+/* Increase line-height in split view */
+.segment--split .segment__source-text {
+  line-height: 2;
+}
+
+/* Target section */
+.segment__target {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-m);
+  padding: var(--spacing-m);
+  padding-bottom: var(--spacing-m);
+}
+
+.segment__target-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.segment__target-text {
+  flex: 1;
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-s);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
+  word-wrap: break-word;
+  min-height: 20px;
+}
+
+/* Increase line-height in split view */
+.segment--split .segment__target-text {
+  line-height: 2;
+}
+
+.segment--active .segment__target-text {
+  color: var(--color-white);
+}
+
+.segment__target-text--editable {
+  outline: none;
+  cursor: text;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.segment__target-text--editable:focus {
+  outline: none;
+}
+
+.segment__target-text--editable:empty:before {
+  content: attr(data-placeholder);
+  color: var(--color-text-secondary);
+  opacity: 0.5;
+}
+
+/* Autocomplete suggestion overlay */
+.segment__suggestion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-s);
+  color: #6e747e;
+  font-weight: var(--font-weight-medium);
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  opacity: 1;
+}
+
+/* Increase line-height in split view for suggestion overlay */
+.segment--split .segment__suggestion {
+  line-height: 2;
+}
+
+/* Fade tags in suggestion overlay */
+.segment__suggestion .inline-tag {
+  opacity: 0.5;
+}
+
+/* Character count */
+.segment__char-count {
+  flex-shrink: 0;
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-s);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
+  min-width: 30px;
+  text-align: right;
+}
+
+.segment__char-count--exceeded {
+  color: var(--color-yellow-500);
+}
+
+/* Inline tags */
+.inline-tag {
+  display: inline-block;
+  align-items: center;
+  padding: 0 var(--spacing-s);
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-s);
+  font-weight: var(--font-weight-medium);
+  color: #e1e2e7;
+  white-space: nowrap;
+  cursor: pointer;
+  pointer-events: auto;
+  position: relative;
+  transition: all 0.15s ease;
+}
+
+.inline-tag::selection {
+  background: transparent;
+}
+
+/* Selected state for tags */
+.inline-tag {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+/* When tag is selected (using CSS pseudo-selector) */
+.segment__target-text--editable .inline-tag:focus,
+.segment__target-text--editable .inline-tag.selected {
+  outline: 2px solid var(--color-yellow-500);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px rgba(255, 187, 20, 0.1);
+}
+
+.inline-tag--open {
+  border-radius: 50px 0 0 50px;
+  margin-right: 4px;
+  margin-left: 2px;
+}
+
+.inline-tag--close {
+  border-radius: 0 50px 50px 0;
+  margin-left: 4px;
+  margin-right: 2px;
+}
+
+.tag-purple {
+  background-color: var(--color-purple-400);
+}
+
+.tag-orange {
+  background-color: var(--color-orange-700);
+}
+
+.tag-gray {
+  background-color: var(--color-gray-600);
+}
+
+/* Suggested text (faded) */
+.suggested-text {
+  opacity: 0.4;
+}
+
+/* Status icons column */
+.segment__status-column {
+  width: 33px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 9px 8px var(--spacing-m) 8px;
+  border-left: 1px solid var(--color-border-default);
+}
+
+.segment__status-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.segment__status-icon--warning {
+  /* Top icon - Warning/Error */
+}
+
+.segment__status-icon--chat {
+  /* Bottom icon - Chat/Comment */
+  margin-top: 12px;
+}
+
+/* Hover effect for inactive segments */
+.segment:not(.segment--active):hover {
+  background-color: rgba(33, 35, 48, 0.8);
+}
+
+/* Make sure tags are selectable and editable */
+.segment--active .inline-tag {
+  cursor: text;
+  user-select: text;
+}

@@ -1,0 +1,19 @@
+/**
+ * CAT Editor Design System - Spacing
+ * Extracted from Figma design tokens
+ */
+
+:root {
+  /* Spacing Scale */
+  --spacing-xxs: 2px;
+  --spacing-xs: 4px;
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+
+  /* Border Radius */
+  --radius-s: 6px;
+  --radius-m: 8px;
+  --radius-l: 16px;
+  --radius-full: 9999px;
+}
